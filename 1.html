@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <script src=library/react.js></script>
+  <script src=library/jquery.js></script>
+  <script src=library/JSXTransformer.js></script><title>React Js Learning</title>
+</head>
+<body>
+
+ <div id="basic-component"></div>
+ <script type="text/jsx">
+
+  // Step1: Create Component.
+  var BasicComponent = React.createClass({
+   // Step2: Decalre your render function.
+   render: function() {
+   	  // Step3: Return output from render function.
+      return (
+ 	    <div>Basic Example of ReactJs</div>
+      );
+   }
+  });
+
+  // Step4: Call your component with component name and DOM element where it needs to get fit.
+  React.render(
+ 	<BasicComponent/>,
+ 	document.getElementById('basic-component')
+  );
+	
+  </script>
+
+</body>
+</html>
